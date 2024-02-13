@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/eac9678171.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -221,6 +222,20 @@
         </div>
     </section>
 
+    <!-- Cart Section -->
+    <section class="cart-container" id="cart-container">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <i class="bx bx-x cart__close" id="cart-close" onclick="closingcart()"></i>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div class="total">
+                <span>Total: <span id="cart-total">₹0</span></span>
+                <a href="payment.html" target="_blank" class="pay-button">Pay</a>
+            </div>
+        </div>
+    </section>
     <!-- FOOTER SECTION -->
     <footer>
         <div class="container">
