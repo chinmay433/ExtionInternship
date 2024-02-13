@@ -39,7 +39,7 @@
                         </path>
                     </svg>
                     <svg xmlns="http://www.w3.org/2000/svg" class="qodef-dropdown-cart-svg" width="19.816" height="18"
-                        viewBox="51.878 -0.952 19.816 18">
+                        viewBox="51.878 -0.952 19.816 18" onclick="openingcart()">
                         <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
                             <path
                                 d="M57.33-.197L54.843 3.12v11.61c0 .916.742 1.658 1.659 1.658h11.609c.917 0 1.659-.742 1.659-1.658V3.12L67.283-.197H57.33zM54.843 3.12h14.928M65.624 6.438a3.317 3.317 0 11-6.634 0">
@@ -66,11 +66,19 @@
                 <div class="col-2">
                     <p>Shop / Men's Red Chinos</p>
                     <h1>Men's Red Chinos</h1>
-                    <small id="product-price" class="product-price">$15</small>
+                    <small>$15</small>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua ullamco laboris nisi.</p>
                     <div class="order">
-                        <a href="#" class="btn" class="add-to-cart-btn" onclick="result(); openingcart();" value="Mens Red Chinos">Add To Cart</a>
+                        <select>
+                            <option>Select Quantity</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <a href="#" class="btn">Add To Cart</a>
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -88,20 +96,6 @@
                 </div>
             </div>
         </div>
-
-        <section class="cart-container" id="cart-container">
-            <div class="cart">
-                <h2>Your Cart</h2>
-                <i class="bx bx-x cart__close" id="cart-close" onclick="closingcart()"></i>
-                <ul id="cart-items">
-                    <!-- Cart items will be dynamically added here -->
-                </ul>
-                <div class="total">
-                    <span>Total: <span id="cart-total">$0</span></span>
-                    <a href="payment.html" target="_blank" class="pay-button">Pay</a>
-                </div>
-            </div>
-        </section>
 
     <!-- FOOTER SECTION -->
     <footer>
