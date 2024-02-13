@@ -66,19 +66,11 @@
                 <div class="col-2">
                     <p>Shop / Women's Blue Jeans</p>
                     <h1>Women's Blue Jeans</h1>
-                    <small>$15</small>
+                    <small id="product-price" class="product-price">$15</small>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua ullamco laboris nisi.</p>
                     <div class="order">
-                        <select>
-                            <option>Select Quantity</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <a href="#" class="btn">Add To Cart</a>
+                        <a href="#" class="btn" class="add-to-cart-btn" onclick="result(); openingcart();" value="Womens Blue Jeans">Add To Cart</a>
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -98,6 +90,19 @@
         </div>
     </section>
 
+    <section class="cart-container" id="cart-container">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <i class="bx bx-x cart__close" id="cart-close" onclick="closingcart()"></i>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div class="total">
+                <span>Total: <span id="cart-total">$0</span></span>
+                <a href="payment.html" target="_blank" class="pay-button">Pay</a>
+            </div>
+        </div>
+    </section>
 
 
     <!-- FOOTER SECTION -->
