@@ -132,6 +132,7 @@ function openingcart() {
   }
   
   function updateQuantity(itemName, change) {
+    console.log(itemName);
     const item = cart.find((cartItem) => cartItem.name === itemName);
     if (item) {
       item.quantity += change;
