@@ -48,11 +48,6 @@ function openingcart() {
     else {
         cartContainer.style.display = "none";
     }
-    // if(dishesContainer){
-    //   dishesContainer.style.gridTemplateColumns = "repeat(2, 1fr)";
-    //   dishesContainer.style.width = "63.5%";
-    // }
-    
   }
   
   function result() {
@@ -103,7 +98,7 @@ function openingcart() {
                   <div class="cart-item-details">
                       <h3>${item.name}</h3>
                       <div class="cart-item-price">
-                          <span>Price: ₹${item.price}</span>
+                          <span>Price: $${item.price}</span>
                           <div class="quantity-controls">
                               <button class="quantity-btn minus" onclick="updateQuantity('${
                                 item.name
@@ -123,7 +118,7 @@ function openingcart() {
     });
   
     const cartTotal = document.getElementById("cart-total");
-    cartTotal.textContent = `₹${total.toFixed(2)}`;
+    cartTotal.textContent = `$${total.toFixed(2)}`;
     const cartContainer = document.getElementById("cart-container");
     cartContainer.style.backgroundColor = "white";
     cartContainer.style.color = "black";
